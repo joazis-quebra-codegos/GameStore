@@ -7,6 +7,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Getter
 @Setter
@@ -25,5 +28,7 @@ public class Desenvolvedora {
 
     private Integer anoFundacao;
 
+    @OneToMany(mappedBy = "desenvolvedora")
+    private List<Jogo> jogos = new ArrayList<>();
 
 }
