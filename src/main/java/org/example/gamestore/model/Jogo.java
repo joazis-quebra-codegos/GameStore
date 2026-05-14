@@ -29,5 +29,4 @@ public class Jogo {
     @ManyToOne
     @JoinColumn(name = "idDesenvolvedora")
     Desenvolvedora desenvolvedora;
-
 }
