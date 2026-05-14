@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
@@ -22,6 +23,7 @@ public class Desenvolvedora {
 
     private String pais;
 
-    @NotNull
     private Integer anoFundacao;
+
+
 }
